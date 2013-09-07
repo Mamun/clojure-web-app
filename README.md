@@ -20,7 +20,7 @@ Add emacs live module- https://github.com/Mamun/emacs-live-clojure-workflow
 Run nrepl, press F9 to start app server. press c+F9 to stop app server.
 
 
-Clojure Script repl
+Clojure-Script repl
 -------------------
 From emacs press F11 to open clojure script repl.
 From browser run repl.cljs() for connection. 
