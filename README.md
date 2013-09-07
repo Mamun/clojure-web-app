@@ -14,10 +14,12 @@ About application and emacs lib
 - Interactive development using emacs-live-clojure-workflow.
 
 
-Start project from emacs-live
+Start server from emacs-live
 -----------------------------
 - Add emacs-live module: https://github.com/Mamun/emacs-live-clojure-workflow
 - Run nrepl, press F9 to start app server. press c+F9 to stop app server.
+- Go http://localhost:8080/user
+- Login user name and password- admin, admin
 
 
 Clojure-Script repl
