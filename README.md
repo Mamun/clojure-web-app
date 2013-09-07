@@ -1,8 +1,8 @@
 clojure-web-app
 ===============
 
-Clojure web application using compojure, enlive, datomic, clojurescript. Interactive development both for clojure and clojure-script 
-using emacs-live-clojure-workflow from emacs live. 
+- Clojure web application using compojure, enlive, datomic, clojurescript.
+- Interactive development for both clojure and clojure-script using emacs-live-clojure-workflow. 
 
 
 About application and emacs lib
