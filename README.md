@@ -7,11 +7,11 @@ using emacs-live-clojure-workflow from emacs live.
 
 About application and emacs lib
 -------------------------------
--Datomic for database
--Compojure for web routing
--Enlive for template
--Clojure script for dynamic UI update.
--Interactive development using emacs-live-clojure-workflow.
+- Datomic for database
+- Compojure for web routing
+- Enlive for template
+- Clojure script for dynamic UI update.
+- Interactive development using emacs-live-clojure-workflow.
 
 
 Start project from emacs-live
