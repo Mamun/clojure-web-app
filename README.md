@@ -2,6 +2,7 @@ clojure-web-app
 ===============
 
 - Clojure web application using compojure, enlive, datomic, clojurescript.
+- Single project and one nrepl server for both clojure and clojure-script.
 - Interactive development for both clojure and clojure-script using emacs-live-clojure-workflow. 
 
 
