@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>My First Template</title>
+
+    <link href="/assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+      }
+    </style>
+    <link href="/assets/lib/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/assets/css/app.css" rel="stylesheet">
+    <script type="text/javascript">
+      //alert("Hello world");
+    </script>
+  </head>
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">TimeLine</a></li>
+            </ul>
+            <ul class="nav pull-right">
+              <li class="divider-vertical"></li>
+              <li>
+                <a href="/logout">Logout</a>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+
+      <div class="row-fluid">
+
+        <div id="menu-content" class="span2"></div>
+
+        <div id="main-content" class="span9">
+          Upload new application
+          <form enctype="multipart/form-data" class="form-horizontal" method="post" action="/upload/file">
+             <input name="file" size="20" type="file" />
+             <input class="btn btn-primary" type="submit" value=" Submit " />
+         </form>
+
+
+        </div>
+      </div>
+
+
+
+      <div class="navbar navbar-fixed-bottom"><footer class="footer"><p class="pull-right"><a href="#">hello Back to top</a></p><a href="#">About </a><a href="#">Help</a></footer></div>
+
+    </div> <!-- /container -->
+
+    <script src="/assets/lib/jquery-1.10.0.min.js"></script>
+    <script src="/assets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/javascripts/zme.js"></script>
+
+  </body>
+</html>

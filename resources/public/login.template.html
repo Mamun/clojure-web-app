@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Login</title>
+
+    <link href="/assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+      }
+    </style>
+    <link href="/assets/lib/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <!--  <link href="/assets/css/app.css" rel="stylesheet"> -->
+    <script type="text/javascript">
+
+      //alert("Hello world");
+    </script>
+  </head>
+  <body>
+
+
+    <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+
+      <div class="row-fluid">
+
+        <div id="main-content" class="span4 offset8">
+
+          <div class="well">
+            <form method="POST" action="/login">
+              <h2 class="form-signin-heading">Please sign in</h2>
+              <input class="input-block-level" name="username" type="text" placeholder="Email address" />
+              <input class="input-block-level" name="password" type="password" id="password" placeholder="Password" />
+              <label class="checkbox">
+               <input type="checkbox" value="remember-me">Remember me</input>
+               <p></p>
+              <button class="btn btn-large btn-primary" type="submit">Sign in</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2013</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <script src="/assets/lib/jquery-1.10.0.min.js"></script>
+    <script src="/assets/lib/bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

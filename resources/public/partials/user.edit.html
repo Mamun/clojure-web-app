@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>My First Template</title>
+
+    <link href="/assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+      }
+    </style>
+    <link href="/assets/lib/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/assets/css/app.css" rel="stylesheet">
+    <script type="text/javascript">
+      //alert("Hello world");
+    </script>
+  </head>
+  <body>
+
+
+    <div class="container">
+
+      <div class="row-fluid">
+
+        <div id="menu-content" class="span2"></div>
+
+        <div id="main-content" class="span9">
+          <form action="/user/update" method="POST" id="u-form" class="form-horizontal">
+            <fieldset>
+              <legend>Legend Name</legend>
+              <div id="s-name" class="control-group">
+                <label class="control-label" for="s-name">First Name</label>
+                <div class="controls">
+                  <input id="s-name" name="s-name" placeholder="First Name" type="text" value="" />
+                  <span></span>
+                </div>
+              </div>
+              <div id="l-name" class="control-group">
+                <label class="control-label" for="l-name">Last Name</label>
+                <div class="controls">
+                  <input id="l-name" name="l-name" placeholder="Last Name" type="text" value="" />
+                  <span></span>
+                </div>
+              </div>
+              <div class="control-group ">
+                <label class="control-label" for="type">Gender</label>
+                <div class="controls">
+                  <select name="type">
+                    <option value="0" selected="false">--Select--</option>
+                    <option value="1" selected="false">Male</option>
+                    <option value="2" selected="false">Female</option>
+                  </select><br />
+                  <lebel class="checkbox inline">
+                    <input type="checkbox" name="rember" id="rember" value="true" checked="true" />Select</lebel>
+                  <input id="id" name="id" type="hidden" value="-1000034" /><br />
+                  <a href="/user" class="btn  btn-primary">Cancel</a>
+                  <input class="btn btn-primary" type="submit" value=" Submit " />
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+
+
+
+      <div class="navbar navbar-fixed-bottom"><footer class="footer"><p class="pull-right"><a href="#">hello Back to top</a></p><a href="#">About </a><a href="#">Help</a></footer></div>
+
+    </div> <!-- /container -->
+
+    <script src="/assets/lib/jquery-1.10.0.min.js"></script>
+    <script src="/assets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/javascripts/zme.js"></script>
+
+  </body>
+</html>

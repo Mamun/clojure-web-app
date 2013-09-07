@@ -1,0 +1,32 @@
+[{:db/id #db/id [:db.part/db]
+  :db/ident :user/s-name
+  :db/valueType :db.type/string
+  :db/cardinality :db.cardinality/one
+  :db/index true
+  :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id [:db.part/db]
+  :db/ident :user/l-name
+  :db/valueType :db.type/string
+  :db/cardinality :db.cardinality/one
+  :db/index true
+  :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id [:db.part/db]
+  :db/ident :user/password
+  :db/valueType :db.type/string
+  :db/cardinality :db.cardinality/one
+  :db.install/_attribute :db.part/db}
+
+  {:db/id #db/id[:db.part/db -1]
+  :db/ident :user/status
+  :db/valueType :db.type/ref
+  :db/cardinality :db.cardinality/one
+  :db/doc " User status "
+  :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id[:db.part/user -2]
+  :db/ident :user.status/active}
+
+ {:db/id #db/id[:db.part/user -3]
+  :db/ident :user.status/delete}]

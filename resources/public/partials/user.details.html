@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>My First Template</title>
+
+    <link href="/assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+      }
+    </style>
+    <link href="/assets/lib/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/assets/css/app.css" rel="stylesheet">
+    <script type="text/javascript">
+      //alert("Hello world");
+    </script>
+  </head>
+  <body>
+
+
+    <div class="container">
+
+      <div class="row-fluid">
+
+        <div id="menu-content" class="span2"></div>
+
+        <div id="main-content" class="span9">
+
+          <table class="table table-condensed">
+            <tbody>
+              <tr><td>First Name</td><td>${s-name}</td></tr>
+              <tr><td>Last Name</td><td>${l-name}</td></tr>
+              <tr><td colspan="2">
+                  <a role="button" data-toggle="modal" class="btn btn-small btn-danger " href="#deleteModel">Delete</a>
+                  <a class="btn btn-small btn-info" href="${update-url}">Update</a></td></tr>
+            </tbody>
+          </table>
+
+          <div class="modal hide fade" aria-labelledby="myModalLabel" tabindex="-1" style="display: none; " aria-hidden="true" role="dialog" id="deleteModel">
+            <div class="modal-header">
+              <button class="close" data-dismiss="modal" aria-hidden="true" type="button">x</button>
+              <h3 id="myModalLabel">Delete!!!</h3></div>
+            <div class="modal-body"><p>Are you sure?  hello will be deleted</p></div>
+            <div class="modal-footer">
+              <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+              <a class="btn btn-primary" href="${delete-url}">Delete</a>
+            </div>
+          </div>
+          <div><a class="btn btn-small btn-info" href="${list-url}"> List </a></div>
+
+        </div>
+      </div>
+
+
+
+      <div class="navbar navbar-fixed-bottom"><footer class="footer"><p class="pull-right"><a href="#">hello Back to top</a></p><a href="#">About </a><a href="#">Help</a></footer></div>
+
+    </div> <!-- /container -->
+
+    <script src="/assets/lib/jquery-1.10.0.min.js"></script>
+    <script src="/assets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/javascripts/zme.js"></script>
+
+  </body>
+</html>
