@@ -1,6 +1,6 @@
 target
-javascripts
-lib
+#javascripts
+#lib
 classes
 checkouts
 out
